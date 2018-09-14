@@ -1,0 +1,19 @@
+{
+  "name": "webpack-browser-field-test",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "build": "npm run build:web && npm run build:electron",
+    "build:electron": "WEBPACK_TARGET=electron-renderer webpack",
+    "build:web": "WEBPACK_TARGET=web webpack",
+    "test": "node test.js"
+  },
+  "dependencies": {
+    "module-browser-field": "file:./module-browser-field",
+    "module-browser-field-obj": "file:./module-browser-field-obj"
+  },
+  "devDependencies": {
+    "webpack": "^4.19.0",
+    "webpack-cli": "^3.1.0"
+  }
+}

@@ -1,0 +1,7 @@
+{
+  "name": "module-browser-field",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "browser": "./browser.js"
+}
